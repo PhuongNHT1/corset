@@ -10,7 +10,7 @@
         "default_icon": "icon.png"
     },
     "background":{
-        "scripts":["corset.js"]
+        "scripts":["local.js", "corset.js"]
     },
     "options_page":"options.html",
     "manifest_version":2
