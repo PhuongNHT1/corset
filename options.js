@@ -11,7 +11,6 @@ host.onchange = function() {
 	var h = host.value.trim();
 	try {
 		chrome.extension.sendRequest({host: h}, function(response){
-			// response is msg from corset.js
 			msg.innerHTML = response;
 			setTimeout(function() {msg.innerHTML = "";}, 3000);
 		});

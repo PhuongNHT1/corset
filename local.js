@@ -6,13 +6,11 @@ String.prototype.obj = function() { try { return JSON.parse(this) } catch(e) { }
 
 lsSet = function(key, obj) {
 	var json = (obj || "{}").json();
-	console.log("lsSet: "+json);
 	localStorage[key] = json;
 }
 
 lsGet = function(key) {
 	var json = localStorage[key] || "{}";
-	console.log("lsGet: "+json);
 	return json.obj();
 }
 
