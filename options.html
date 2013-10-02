@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		body {
+			font-family: helvetica;
+			padding: 10mm;
+		}
+		body, td, input, select, textarea {
+			font-size: 6mm;
+		}
+		#msg {
+			color: #080;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Corset</h1>
+	<hr>
+
+	<p>
+	Copyright 2013 Sleepless Inc.  All Rights Reserved
+
+	<p>
+	Enter a host name, like "sleepless.com" or "127.0.0.1".
+	Any HTTP requests made to that host will
+	have the response header "Access-Control-Allow-Origin: *" injected
+	before the browser sees the response.
+
+	<hr>
+
+	<p>
+	Hostname: <input id=host> <input type=button value="Save">
+
+	<p>
+	<div id=msg></div>
+
+	<script src="local.js"></script>
+	<script src="options.js"></script>
+
+</body>
+</html>
